@@ -8,6 +8,24 @@ function handleClick(e) {
 }
 
 /* End Given Code, don't edit above here...*/
-
 /* Write your implementation of greet() */
+function greet(timeString) {
+  let t = timeString.split(':')
+  let i = parseInt(t)
+  if (i < 12) {
+    return "Good Morning"
+  }
+  if (i > 12 && i < 17) {
+    return "Good Afternoon"
+  }
+  return "Good Evening"
+}
+
 /* Write your implementation of displayMessage() */
+
+function displayMessage(phrase) {
+  let greet = document.getElementById("greeting")
+  greet.innerText = phrase
+}
+
+
